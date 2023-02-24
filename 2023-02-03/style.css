@@ -1,0 +1,95 @@
+@font-face {
+            font-family: Cozette;
+            src: url(/media/CozetteVector.ttf);
+        }
+        
+        :root {
+            --width:720px;
+            --font-main: "Cozette", monospace;
+            --font-secondary: "Cozette", monospace;
+        }
+
+        body {
+           font-family:"Cozette"; 
+           background-color: antiquewhite;
+           text-transform: lowercase;
+           text-align:left;
+           font-size: 18.5px;
+           max-width: var(--width);
+           margin:auto;
+           word-wrap: break-word;
+           overflow-wrap: break-word;
+           padding:20px;
+           line-height: 1.5;
+        }
+
+        header {
+            font-size: 15px;
+            color: olivedrab;
+            animation: animate 1.5s linear infinite;
+          } 
+  
+            @keyframes animate{
+              0%{
+                opacity: 0;
+                }
+              50%{
+                opacity: 0.7;
+                }
+              100%{
+                opacity: 0;
+                }
+        }
+        
+        footer {
+            font-size: 15px;
+            color: antiquewhite;
+            background-color: olivedrab;
+            padding:0.05%;
+        }
+
+        a {
+            color: palevioletred;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: olivedrab;
+            text-decoration: none;
+        }
+        
+        a:before { content:"{" }
+        a:after { content:"}" }
+
+
+        #p {
+            text-decoration: underline 4px palevioletred;
+            background-color: antiquewhite;
+        }
+        #g {
+            text-decoration: underline 4px olivedrab;
+            background-color: antiquewhite;
+        }
+        
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        
+        ::-moz-selection { /* Code for Firefox */
+          color: antiquewhite;
+          background: palevioletred;
+        }
+
+        ::selection {
+          color: antiquewhite;
+          background: palevioletred;
+        }
+        
+        .yw-widget-text {
+           text-align: center;
+          }
+        
+        
